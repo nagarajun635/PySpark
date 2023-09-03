@@ -14,11 +14,11 @@ df2 = spark.createDataFrame([
 ], schema='a long, b double, c string, d date, e timestamp')
 df2.show()
 df3 = spark.createDataFrame([
-    [1,2,3,4],[2,3,4,5],[3,4,5,6]
-],schema=['a','b','c','d'])
+    [1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6]
+], schema=['a', 'b', 'c', 'd'])
 df3.show()
 df4 = spark.createDataFrame([
-    (2,3,4,5),(3,4,5,6),(5,6,7,8)
-],schema=['a','b','c','d'])
+    (2, 3, 4, 5), (3, 4, 5, 6), (5, 6, 7, 8)
+], schema=['a', 'b', 'c', 'd'])
 df4.show()
 spark.stop()
