@@ -1,6 +1,5 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, avg
-import subprocess
 
 
 spark = SparkSession.builder.appName('Examples').getOrCreate()
