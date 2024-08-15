@@ -47,5 +47,6 @@ sc = SparkContext(conf=conf)
 # print(bcv.value)
 
 acc =  sc.accumulator(0)
-print(sc.parallelize(range(10)).foreach(lambda x: acc.add(x)))
+sc.parallelize(range(10)).foreach(lambda x: acc.add(x))
+print(acc.value)
 sc.stop()
